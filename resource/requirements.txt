@@ -1,0 +1,14 @@
+# Python 3.12.5. Install: pip install -r requirements.txt
+
+# What the pipeline imports.
+pandas==2.2.2
+numpy==1.26.4
+catboost==1.2.8
+scikit-learn>=1.5.2,<2.0
+
+# What the submodules under external/ need.
+scipy==1.13.1          # log-distance-measures
+pulp==2.9.0            # log-distance-measures
+jellyfish==1.0.1       # log-distance-measures
+sortedcontainers==2.4.0  # simpn
+matplotlib==3.8.4      # simpn

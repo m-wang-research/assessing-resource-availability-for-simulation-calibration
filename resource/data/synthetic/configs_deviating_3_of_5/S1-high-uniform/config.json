@@ -1,0 +1,90 @@
+{
+ "scenario_id": "S1-high-uniform",
+ "target": "synthetic",
+ "scenario_type": "availability_over",
+ "bin_minutes": 60,
+ "weeks": 8,
+ "arrival_rate_per_hour": 0.2,
+ "mean_service_minutes": 13.0,
+ "resources": [
+  "CR01",
+  "CR02",
+  "CR03",
+  "CR04",
+  "CR05"
+ ],
+ "p_surface_csv": "data/synthetic/configs_deviating_3_of_5/S1-high-uniform/p_surface.csv",
+ "p_true_surface_csv": "data/synthetic/configs_deviating_3_of_5/p_true_surface.csv",
+ "workload_level": "baseline",
+ "arrival_lambda": 0.2,
+ "scenario_description": "Availability of CR01, CR02, CR03 raised by half and clipped at 1. The other resources equal P_true.",
+ "arrival_profile_by_state": {
+  "*": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "arrival_weekday_multiplier_by_state": {
+  "*": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   0.0
+  ]
+ },
+ "availability_spec": {
+  "open_hours": [
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ],
+  "workdays": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "availability_by_hour": [
+   0.2,
+   0.4,
+   0.6,
+   0.8,
+   0.8,
+   0.6,
+   0.4,
+   0.2
+  ],
+  "note": "symmetric, one level step per hour; shared by every resource; weekends and 16:00-08:00 are zero"
+ }
+}

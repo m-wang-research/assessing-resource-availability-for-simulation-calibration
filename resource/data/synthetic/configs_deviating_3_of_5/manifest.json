@@ -1,0 +1,61 @@
+{
+  "storyline": "deviating_3_of_5",
+  "manifest": [
+    {
+      "target": "synthetic",
+      "scenario_id": "S0-same",
+      "scenario_type": "no_mismatch_control",
+      "workload_level": "baseline",
+      "config_json": "data/synthetic/configs_deviating_3_of_5/S0-same/config.json",
+      "state": "P"
+    },
+    {
+      "target": "synthetic",
+      "scenario_id": "S1-low-uniform",
+      "scenario_type": "availability_under",
+      "workload_level": "baseline",
+      "config_json": "data/synthetic/configs_deviating_3_of_5/S1-low-uniform/config.json",
+      "state": "P"
+    },
+    {
+      "target": "synthetic",
+      "scenario_id": "S1-high-uniform",
+      "scenario_type": "availability_over",
+      "workload_level": "baseline",
+      "config_json": "data/synthetic/configs_deviating_3_of_5/S1-high-uniform/config.json",
+      "state": "P"
+    },
+    {
+      "target": "synthetic",
+      "scenario_id": "S2-early-strong",
+      "scenario_type": "temporal_shift_early",
+      "workload_level": "baseline",
+      "config_json": "data/synthetic/configs_deviating_3_of_5/S2-early-strong/config.json",
+      "state": "P"
+    },
+    {
+      "target": "synthetic",
+      "scenario_id": "S2-late-strong",
+      "scenario_type": "temporal_shift_late",
+      "workload_level": "baseline",
+      "config_json": "data/synthetic/configs_deviating_3_of_5/S2-late-strong/config.json",
+      "state": "P"
+    },
+    {
+      "target": "synthetic",
+      "scenario_id": "S3-busy",
+      "scenario_type": "workload_busy_control",
+      "workload_level": "high",
+      "config_json": "data/synthetic/configs_deviating_3_of_5/S3-busy/config.json",
+      "state": "P"
+    },
+    {
+      "target": "synthetic",
+      "scenario_id": "S3-idle",
+      "scenario_type": "workload_idle_control",
+      "workload_level": "low",
+      "config_json": "data/synthetic/configs_deviating_3_of_5/S3-idle/config.json",
+      "state": "P"
+    }
+  ]
+}
