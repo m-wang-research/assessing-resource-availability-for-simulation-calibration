@@ -1,0 +1,9 @@
+[submodule "external/simpn"]
+	path = external/simpn
+	url = https://github.com/bpogroup/simpn.git
+[submodule "external/log-distance-measures"]
+	path = external/log-distance-measures
+	url = https://github.com/AutomatedProcessImprovement/log-distance-measures.git
+[submodule "external/probabilistic_resource_calendars"]
+	path = external/probabilistic_resource_calendars
+	url = https://github.com/orlenyslp/probabilistic_resource_calendars.git

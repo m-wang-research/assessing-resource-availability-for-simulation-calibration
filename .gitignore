@@ -1,0 +1,19 @@
+__pycache__/
+.DS_Store
+.venv/
+
+resource/results/
+docs/
+
+# Only the built PDF of the supplementary material ships. Everything it is made from
+# stays local: the generator that holds its prose, the LaTeX it emits and the document
+# class it needs, the figures, the CSVs behind its tables, the working notes and the
+# Chinese reading version.
+supplementary/*
+!supplementary/supplementary_material.pdf
+
+# Development tools, not part of reproducing the paper: the first builds the CSVs
+# behind the supplementary tables, the second compares a run against a reference run
+# that this repository does not carry.
+resource/scripts/collect_supplementary.py
+resource/scripts/repro_gate.py

@@ -1,0 +1,90 @@
+{
+ "scenario_id": "S2-early-strong",
+ "target": "synthetic",
+ "scenario_type": "temporal_shift_early",
+ "bin_minutes": 60,
+ "weeks": 8,
+ "arrival_rate_per_hour": 0.2,
+ "mean_service_minutes": 13.0,
+ "resources": [
+  "CR01",
+  "CR02",
+  "CR03",
+  "CR04",
+  "CR05"
+ ],
+ "p_surface_csv": "data/synthetic/configs_deviating_4_of_5/S2-early-strong/p_surface.csv",
+ "p_true_surface_csv": "data/synthetic/configs_deviating_4_of_5/p_true_surface.csv",
+ "workload_level": "baseline",
+ "arrival_lambda": 0.2,
+ "scenario_description": "Each resource's profile inside 08:00-16:00 moved two hours earlier. The two hours it vacates at the end of the day keep the profile's lowest value.",
+ "arrival_profile_by_state": {
+  "*": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0,
+   10.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "arrival_weekday_multiplier_by_state": {
+  "*": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   0.0
+  ]
+ },
+ "availability_spec": {
+  "open_hours": [
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ],
+  "workdays": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "availability_by_hour": [
+   0.2,
+   0.4,
+   0.6,
+   0.8,
+   0.8,
+   0.6,
+   0.4,
+   0.2
+  ],
+  "note": "symmetric, one level step per hour; shared by every resource; weekends and 16:00-08:00 are zero"
+ }
+}
